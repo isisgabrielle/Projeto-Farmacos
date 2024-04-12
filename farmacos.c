@@ -54,7 +54,7 @@ void Incluir() {
     printf("\nNova inclusao? S/N ");
     scanf(" %c",&R);
     R=toupper(R);}
-  while (R!='N');
+ while (R!='N');
   return;}
   //system("pause");
 
@@ -80,8 +80,8 @@ void Excluir(){
 	      Achou=1;	
 	     }}
     while (!feof(ArqFarma) && (Achou==0));
-    if (Achou==0)
-      printf("Registro inexistente!"); 
+    if (Achou==0) {
+      printf("Registro inexistente!"); }
     else{
     
      RgFarma.QEstoque = -1;
@@ -116,8 +116,8 @@ void Alterar(){
         printf("Valor: %f\n",RgFarma.Preco);
         printf("Estoque: %d\n",RgFarma.QEstoque);}}
     while (!feof(ArqFarma) && (Achou==0));
-    if (Achou==0)
-      printf("Registro inexistente!"); 
+    if (Achou==0) {
+      printf("Registro inexistente!"); }
     else{
       printf("Qual o novo preco? \n"); 
       scanf("%f",&RgFarma.Preco);
@@ -150,8 +150,9 @@ void Consultar(){
       printf("Valor: R$%.2f\n",RgFarma.Preco);
       printf("Estoque: %d\n",RgFarma.QEstoque);}}
   while (!feof(ArqFarma) && (Achou==0));
-  if (Achou==0)
-    printf("Registro inexistente!");  
+  if (Achou==0) {
+    printf("Registro inexistente!");
+    }
   //system("pause");
   return;}
 
