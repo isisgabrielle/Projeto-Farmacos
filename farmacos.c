@@ -1,4 +1,5 @@
-#include <stdio.h>
+// esse projeto foi desenvolvido em uma máteria de programação imperativa onde a professora trouxe o codigo base e foi necessario que eu implementasse algumas melhorias no código (melhorias essas que estão identificadas) e criasse novas funções.
+ #include <stdio.h>
 #include <stdlib.h>  //usado system
 #include <ctype.h>   //usado toupper
 #include <string.h>  //usado strcmp
@@ -47,7 +48,7 @@ void Incluir() {
     }
     else{
       printf("digite um numero positivo!\n");
-      // melhoria um, pois com numeros negativos, se eu colocasse -1 por exemplo, o codigo permitia, sendo que isso nao existe
+      // foi realizada uma melhoria ao impossibilitar o usuário de colocar estoques negativos, evitando assim possiveis erros no funcionamento do programa.
     }} while (estoque_temp < 0);
     fseek(ArqFarma,0,2);
     fwrite(&RgFarma,Tamanho,1,ArqFarma);
@@ -184,7 +185,7 @@ void Dbug(){
   
   //system("pause");
   }
-void Recuperar(){ // melhoria dois
+void Recuperar(){ // melhoria dois, foi criada uma função para recuperar farmacos excluidos anteriormente.
   //system("cls");
   printf("*** recuperar itens excluidos ***\n\n");  
   fseek(ArqFarma,0,0);
