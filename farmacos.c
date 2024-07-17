@@ -1,5 +1,3 @@
-// esse projeto foi desenvolvido em uma máteria de programação imperativa onde a professora trouxe o codigo base
-// e foi necessario que eu implementasse algumas melhorias no código (melhorias essas que estão identificadas) e criasse novas funções.
 #include <stdio.h>
 #include <stdlib.h>  //usado system
 #include <ctype.h>   //usado toupper
